@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="excercise1()">Excercise1</button><p>Bai 1. Khai bao cac bien thuoc cac kieu khac nhau, gan gia tri cho chung va in ra tai lieu HTML</p>
+<button onclick="excercise2()">Excercise2</button><p>Bai 2. viet mot doan ma Javascript, khai bao bien width chua gia tri do rong cua hinh chu nhat, bien height chieu cao cua hinh chu nhat</p>
+<button onclick="excercise3()">Excercise3</button><p>Bai 3. Dung ham prompt() de nhap hai so tu ban phim, luu vao hai bien va kiem tra xem a co phai la boi so cua b hay khong(tuc la a co chia het cho b hay khong).Hien thi ket qua ra man hinh bang cach su dung ham alert().</p>
+<script>
+    function excercise1(){
+        let i=10;
+        let f= 20.5;
+        let b= true;
+        let s="Ha Noi";
+        document.write('i= '+i);
+        document.write('</br>');
+        document.write('f= '+f);
+        document.write('</br>');
+        document.write('b= '+b);
+        document.write('</br>');
+        document.write('s= '+s);
+
+    }
+    function excercise2(){
+        let width=20;
+        let height=10;
+        let area=width* height;
+        document.write('Area = '+ area);
+    }
+    function excercise3() {
+        let a= parseInt(prompt("Nhap so a vao day: "));
+        let b=parseInt(prompt("Nhap so b vao day: "));
+        if(a%b==0){
+            alert(a+' la boi so cua '+b);
+        }else{
+            alert(a+' khong la boi so cua '+b);
+        }
+    }
+</script>
+</body>
+</html>
